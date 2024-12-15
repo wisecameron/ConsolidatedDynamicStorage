@@ -367,7 +367,7 @@ This ERC introduces a new design pattern and does not interfere with existing So
 
 ## Gas Benchmarks (HoneyBadger)
 
-* This section assumes that storage operations interact with pre-populated slots.
+* This section assumes that storage operations interact with initialized slots.
 * Displayed values reference *execution* cost.
 
 	`init_create([1], [256]):` 93,860 gas
