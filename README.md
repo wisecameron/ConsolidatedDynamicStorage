@@ -1,4 +1,4 @@
-# ConsolidatedDynamicStorage (CDS)
+# Consolidated Dynamic Storage (CDS)
 
 ## Abstract
 While Diamond Storage and Proxy-Delegate patterns offer time-tested upgradeability solutions, they introduce clear constraints: bloated contract structures, rigid storage alignment requirements, and complex integrations for new logic that become increasingly cumbersome as project scope expands.
