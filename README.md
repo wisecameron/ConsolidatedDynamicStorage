@@ -11,4 +11,4 @@ Extendable Structs: Struct members can be dynamically appended to existing mappe
 Modular Storage Spaces: Configurable, logically-separated namespaces that support dynamic mappings-of-structs and in-place extensions.
 This architecture centralizes storage management, enabling seamless storage-level integration for new contracts. By eliminating slot collisions, streamlining upgrades, and enabling dynamic state transparency, CDS is ideal for evolving systems like DeFi protocols, DAOs, and modular frameworks requiring frequent upgrades.
 
-![Scaling CDS](./Scaling%20CDS.png)
+![Scaling CDS](./images/Scaling%20CDS.png)
