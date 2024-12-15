@@ -371,11 +371,17 @@ This ERC introduces a new design pattern and does not interfere with existing So
 * Displayed values reference *execution* cost.
 
 	`init_create([1], [256]):` 93,860 gas
+
 	`init_create([1,1,1], [8,256,256]):` 140,024 gas
+
 	`insert_new_member:` 40,653 gas
+
 	`push:` 10,316 gas
+
 	`put:` 15,543 gas
+
 	`put_batch([20, 20], [0, 1], 0, 0):` 22,895 gas
+
 	`get`: 9374 gas
 
 ---
