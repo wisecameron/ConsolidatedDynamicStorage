@@ -27,7 +27,7 @@ This architecture centralizes storage management, enabling seamless storage-leve
 
 ## Motivation  
 
-![[Scaling CDS.png]]
+![Scaling CDS](./Scaling%20CDS.png)
 
 The Ethereum ecosystem relies heavily on upgradeable smart contract patterns to enable flexibility in evolving protocols and systems. Contemporary solutions such as **Proxy-Delegate** patterns and the **Diamond Standard (ERC-2535)** have proven their utility but suffer from significant limitations:
 
@@ -41,8 +41,9 @@ The Ethereum ecosystem relies heavily on upgradeable smart contract patterns to 
     
 3.  **Structural Inefficiency**:
     - Proxy-delegate models require a one-to-one mapping between pure contracts and their storage, creating a *spiderweb pattern* of linked contracts.  This introduces higher gas costs and added complexity.  Additionally, cross-contract calls introduce clear convolution: for instance, a single cross-contract call would invoke: ProxyA, DelegateA, ProxyB, DelegateB.  Diamonds can introduce similar convolution: while routing calls through diamonds introduces a consistent entry point, it also creates a bottleneck for growing systems.  As more diamonds are introduced, a similar spiderweb pattern takes shape emerge.
-    ![[Scaling Proxy Delegate.png]]
-	![[Scaling Diamonds.png]]
+    
+![Scaling Proxy Delegate](./Scaling%20Proxy%20Delegate.png)
+![Scaling Diamonds](./Scaling%20Diamonds.png)
 	
 4. **Lack of In-Place Solutions**
     - Existing solutions present a clear lack of contract-level control over the storage space.  In the case of proxy-delegate models, an equivalent to *upgradeable structs* is technically achievable, but requires upgrading and swapping out contracts.  For Diamond facets, the situation is more dire, as the storage layout is completely rigid unless paired with a proxy-delegate model.  
@@ -66,7 +67,7 @@ The Ethereum ecosystem relies heavily on upgradeable smart contract patterns to 
 
 By solving these limitations, CDS simplifies upgradeability, reduces gas costs, and eliminates storage layout constraints, empowering developers to build evolving systems like DeFi protocols, modular frameworks, and DAOs with greater flexibility and confidence.
 
-![[Adaptability.png]]
+![Adaptability](./Adaptability.png)
 
 ---
 
@@ -177,8 +178,8 @@ function insert_new_member(
 
 ## Initialization
 
-![[Basic_interaction_flow_CDS.png]]
-![[CDS Init, Extension.png]]
+![Basic Interaction Flow](./Basic_interaction_flow_CDS.png)
+![CDS Init, Extension](./CDS%20Init,%20Extension.png)
 Getting a finished system up and running is straightforward.  The `init_create` function handles storage space creation in both an initialization and live extension setting.  The function takes an array of types and sizes, which must conform to the above specifications, and be equivalent in length.
 
 ```solidity
