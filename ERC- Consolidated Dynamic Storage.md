@@ -382,6 +382,4 @@ This ERC introduces a new design pattern and does not interfere with existing So
 
 ## Implementation
 
-```solidity 
-
-```
+Refer to [CDS Minimal Example](https://github.com/wisecameron/ConsolidatedDynamicStorage/blob/main/contracts/CDSMinimal.sol)
