@@ -1,12 +1,12 @@
 # ERC-X: Consolidated Dynamic Storage in Solidity  
 
-## Title: Consolidated Dynamic Storage
-**Author(s):** [cameronwarnicketh@gmail.com, github.com/wisecameron]
-**Status:** Draft
-**Type:** Standards Track
-**Created:** 2024-13-12
-**Requires:** None
-**Discussions-To:** [URL to Ethereum Magicians, GitHub Discussion, etc.]  
+## Title: Consolidated Dynamic Storage  
+**Author(s):** [cameronwarnicketh@gmail.com, github.com/wisecameron]  
+**Status:** Draft  
+**Type:** Standards Track  
+**Created:** 2024-13-12  
+**Requires:** None  
+**Discussions-To:** [URL to Ethereum Magicians, GitHub Discussion, etc.]    
 
 ---
 
